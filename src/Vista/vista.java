@@ -7,7 +7,7 @@ public class vista extends JPanel{
   
         super.paintComponent(g);
          
-        File miimagen= new File("./src/imgs/messi.png");
+        File miimagen= new File("./src/imgs/messi.jpeg");
          
         try{
             imagen=ImageIO.read(miimagen); //lanza excepción
