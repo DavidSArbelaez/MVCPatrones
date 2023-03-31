@@ -1,14 +1,16 @@
 package Launcher;
- 
-import java.awt.*;
-import java.io.*;
-import javax.swing.*;
-import javax.imageio.*;
- 
- 
-public class main {
- 
- public static void main(String[] args) {
-    
- }
+import Controlador.controlador;
+import Modelo.modelo;
+import Vista.vista;
+import java.io.IOException;
+/**
+ *
+ * @author golden
+ */
+public class launcher {
+    public static void main(String[] args) throws IOException {
+        modelo model = new modelo();
+        vista view = new vista(model);
+        controlador c = new controlador(model,view);
+    }
 }
